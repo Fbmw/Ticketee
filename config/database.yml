@@ -5,9 +5,9 @@
 #   gem 'sqlite3'
 #
 default: &default
-  adapter: sqlite3
-  pool: 5
-  timeout: 5000
+ adapter: sqlite3
+ pool: 5
+ timeout: 5000
 
 development:
   <<: *default
@@ -20,6 +20,22 @@ test:
   <<: *default
   database: db/test.sqlite3
 
-production:
-  <<: *default
-  database: db/production.sqlite3
+#production:
+ # <<: *default
+ # database: db/production.sqlite3
+ #development: 
+  # adapter: postgresql
+   #database: ticketee_development
+   #pool: 5
+   #timeout: 5000
+   #username: postgres
+   #password: bmw
+
+ #test:
+  # adapter: postgresql
+   #database: ticketee_test
+   #pool: 5
+   #timeout: 5000
+   #username: postgres
+   #password: bmw
+ 
