@@ -1,5 +1,6 @@
 class Project < ActiveRecord::Base
 
+validates :name, presence: true
 #this create a table on database
 	def change
 		create_table :projects do |t|
