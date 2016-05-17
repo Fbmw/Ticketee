@@ -19,8 +19,8 @@ RSpec.feature "User can edit existing projects" do
 	end
 
 	scenario "when providing invalid attributes" do
-  fill_in "Name", with: ""
-  click_button "Update Project"
-  expect(page).to have_content "Project has not been updated."
+        fill_in "Name", with: ""
+        click_button "Update Project"
+        expect(page).to have_content "Project has not been updated."
     end
 end
